@@ -2,9 +2,7 @@
 Net core5  vue3 puppeteer sharp的一次尝试
 
 ## 提示
-[TG 频道](https://t.me/joinchat/4nf-VfnBN6pmZDdl) 
 
-[TG 群组](https://t.me/joinchat/dL-NJh1G6bc2OGM1) 
 
 由于我自己的环境是centos x86，arm并未测试
 
@@ -69,7 +67,7 @@ cd  /nolanjdc
 8拉镜像
 
 ```
-sudo docker pull nolanhzy/nvjdc:0.5
+sudo docker pull nolanhzy/nvjdc:0.8
 ```
 
 9启动镜像
@@ -77,7 +75,7 @@ sudo docker pull nolanhzy/nvjdc:0.5
 ```
 sudo docker run   --name nolanjdc -p 5701:80 -d  -v  "$(pwd)"/Config.json:/app/Config/Config.json:ro \
 -v "$(pwd)"/.local-chromium:/app/.local-chromium  \
--it --privileged=true  nolanhzy/nvjdc:0.5 
+-it --privileged=true  nolanhzy/nvjdc:0.8 
 ```
 
 10查看 日志 
@@ -101,7 +99,7 @@ docker rm -f nolanjdc
 ```
 删除镜像
 ```
-docker rmi -f nolanhzy/nvjdc:0.4
+docker rmi -f nolanhzy/nvjdc:0.8
 ```
 
 进入你以前下载过 浏览器 和JSON配置的文件夹中 
